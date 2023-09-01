@@ -1,0 +1,155 @@
+.header-container {
+    display: flex;
+    width: 100vw;
+    padding: 1.5rem 15vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    .left {
+        display: flex;
+        align-items: center;
+        h1{
+            background-color: white;
+            color: red;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        h2{
+            color: white;
+            font-weight: 500;
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-left: 2px;
+            cursor: pointer;
+        }
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        .social{
+            color: white;
+            display: flex;
+            gap: 7px;
+            margin-right: 5px;
+            cursor: pointer;
+            .icons{
+                width: 25px;
+                height: 25px;
+            }
+            .icons-gplus{
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .login {
+            display: flex;
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                padding: 10px 10px;
+                color: rgb(96, 95, 95);
+                border: none;
+                border-radius: 10px;
+                font-size: 13px;
+                cursor: pointer;
+                .icons{
+                    width: 22px;
+                    height: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media (width > 600px) and (width <= 1024px){
+    .header-container{
+        padding: 0.8rem 15vw;
+        .left{
+            h1{
+                font-size: 20px;
+                width: 35px;
+                height: 35px;
+            }
+            h2{
+                font-size: 20px;
+            }
+        }
+        .right {
+            .social{
+                .icons{
+                    width: 15px;
+                    height: 15px;
+                }
+                .icons-gplus{
+                    width: 17px;
+                    height: 17px;
+                }
+            }
+            .login{
+                button{
+                    font-size: 12px;
+                    padding: 7px 7px;
+                    border-radius: 4px;
+                    .icons{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (width > 300px) and (width <= 600px){
+    .header-container{
+        padding: 0.8rem 2vw;
+        .left{
+            h1{
+                font-size: 14px;
+                width: 25px;
+                height: 25px;
+            }
+            h2{
+                font-size: 14px;
+            }
+        }
+        .right {
+            .social{
+                gap: 2px;
+                .icons{
+                    width: 10px;
+                    height: 10px;
+                }
+                .icons-gplus{
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+            .login{
+                button{
+                    font-size: 7px;
+                    padding: 4px 4px;
+                    border-radius: 2px;
+                    .icons{
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

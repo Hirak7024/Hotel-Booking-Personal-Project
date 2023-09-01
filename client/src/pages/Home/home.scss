@@ -1,0 +1,116 @@
+.home-main-container {
+    .home-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: brightness(80%);
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 37vh;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                font-size: 70px;
+            }
+
+            p {
+                font-size: 20px;
+                letter-spacing: 2px;
+                margin-top: 15px;
+                font-weight: 600;
+            }
+
+            button {
+                display: flex;
+                gap: 10px;
+                height: 50px;
+                width: 180px;
+                align-items: center;
+                justify-content: center;
+                color: rgb(95, 94, 94);
+                font-weight: 600;
+                margin-top: 50px;
+                border: none;
+                .icon{
+                    width: 20px;
+                    height: 20px;
+                    color:rgb(232,36,76);
+                }
+            }
+        }
+    }
+}
+
+@media (width > 600px) and (width <= 1024px){
+.home-main-container {
+    .home-container {
+        .content {
+           
+            h1 {
+                font-size: 50px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            button {
+                font-size: 12px;
+                height: 40px;
+                width: 150px;
+                .icon{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
+}
+@media (width > 300px) and (width <= 600px){
+    .home-main-container {
+        .home-container {
+            height: 80vh;
+            img{
+                height: 80vh;
+            }
+            
+            .content {
+               
+                h1 {
+                    font-size: 30px;
+                }
+    
+                p {
+                    font-size: 10px;
+                }
+    
+                button {
+                    font-size: 8px;
+                    height: 30px;
+                    width: 100px;
+                    .icon{
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+    }

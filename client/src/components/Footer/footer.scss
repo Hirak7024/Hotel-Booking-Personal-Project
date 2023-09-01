@@ -1,0 +1,302 @@
+.footer-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding: 3rem 10vw;
+    background-color: #0a0a08;
+    color: white;
+    .footer-container-1{
+        display: flex;
+        justify-content: space-between;
+        .address-box{
+            flex: 1;
+            color: white;
+            h1{
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 400;
+            }
+            ul{
+                list-style: none;
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    gap: 12px;
+                    font-size: 15px;
+                    .icon{
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+        .information-box{
+            flex: 1;
+            color: white;
+            h1{
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 400;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 8px;
+                    font-size: 15px;
+                }
+            }
+        }
+        .account-box{
+            color: white;
+            flex: 1;
+            h1{
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 400;
+            }
+            ul{
+                list-style: none;
+                li{
+                    display: flex;
+                    margin-bottom: 8px;
+                    font-size: 15px;
+
+                }
+            }
+        }
+        .newsletter-box{
+            color: white;
+            flex: 1;
+            h1{
+                margin-bottom: 20px;
+                font-size: 25px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 15px;
+                word-spacing: 3px;
+                margin-bottom: 20px;
+            }
+            .input-box{
+                display: flex;
+                margin-bottom: 20px;
+                input{
+                    border: none;
+                    outline: none;
+                    font-size: 15px;
+                    padding-right: 7px;
+                    width: 80%;
+                    height: 40px;
+                }
+                button{
+                    width: 20%;
+                    border: none;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fc4556;
+                    color: white;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                }
+            }
+            .social-links{
+                display: flex;
+                gap: 15px;
+            }
+        }
+    }
+    .footer-container-2{
+        display: flex;
+        margin-top: 70px;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 19px;
+        }
+    }
+   
+}
+
+@media (width > 600px) and (width <= 1024px){
+    .footer-main-container{
+        .footer-container-1{
+            gap: 20px;
+            .address-box{
+                h1{
+                    margin-bottom: 20px;
+                    font-size: 17px;
+                    font-weight: 400;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 15px;
+                        gap: 12px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .information-box{
+                h1{
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                ul{
+                    li{
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .account-box{
+                h1{
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                ul{
+                    li{
+                        margin-bottom: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .newsletter-box{
+                h1{
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 12px;
+                    word-spacing: 3px;
+                    margin-bottom: 10px;
+                }
+                .input-box{
+                    input{
+                        font-size: 13px;
+                        height: 25px;
+                        padding-left: 10px;
+                        width: 70%;
+                    }
+                    button{
+                        height: 25px;
+                        font-size: 7px;
+                        width: 30%;
+                    }
+                }
+                .social-links{
+                    display: flex;
+                    gap: 10px;
+                    .icons{
+                        width: 22px;
+                        height: 22px;
+                    }
+                }
+            }
+        }
+        .footer-container-2{
+            margin-top: 50px;
+            p{
+                font-size: 14px;
+            }
+        }
+       
+    }
+}
+@media (width > 300px) and (width <= 600px){
+    .footer-main-container{
+        padding: 2rem 5vw;
+        .footer-container-1{
+            gap: 15px;
+            .address-box{
+                h1{
+                    margin-bottom: 15px;
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 10px;
+                        gap: 7px;
+                        font-size: 7px;
+                        .icon{
+                            width: 10px;
+                            height: 10px;
+                        }
+                    }
+                }
+            }
+            .information-box{
+                h1{
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+                ul{
+                    li{
+                        margin-bottom: 5px;
+                        font-size: 7px;
+                    }
+                }
+            }
+            .account-box{
+                h1{
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+                ul{
+                    li{
+                        margin-bottom: 5px;
+                        font-size: 7px;
+                    }
+                }
+            }
+            .newsletter-box{
+                h1{
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+                p{
+                    font-size: 7px;
+                    word-spacing: 3px;
+                    margin-bottom: 10px;
+                }
+                .input-box{
+                    input{
+                        font-size: 10px;
+                        height: 15px;
+                        padding-left: 5px;
+                        width: 70%;
+                    }
+                    button{
+                        height: 15px;
+                        font-size: 5px;
+                        width: 30%;
+                    }
+                }
+                .social-links{
+                    display: flex;
+                    gap: 3px;
+                    .icons{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+            }
+        }
+        .footer-container-2{
+            margin-top: 30px;
+            p{
+                font-size: 10px;
+            }
+        }
+       
+    }
+}
+    

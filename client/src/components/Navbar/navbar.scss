@@ -1,0 +1,125 @@
+.navbar-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: relative;
+    top: 7rem;
+    left: 0;
+    z-index: 10;
+    padding: 0 15vw;
+    background-color: transparent;
+    .left-container{
+        width: 80%;
+        background-color: white;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 5rem;
+        ul{
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: space-between;
+            li{
+                display: flex;
+                gap: 3rem;
+                a{
+                    text-decoration: none;
+                    color: grey;
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .right-container{
+        width: 20%;
+        height: 100%;
+        background-color: #e8244c;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+@media (width > 1024px) and (width <= 1330px) {
+    .navbar-main-container{
+        height: 50px;
+        .left-container{
+            width: 87%;
+            padding: 0 rem;
+            ul{
+                li{    
+                    a{
+                        font-size: 11px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .right-container{
+            width: 13%;
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (width > 800px) and (width <= 1024px) {
+    .navbar-main-container{
+        height: 50px;
+        .left-container{
+            width: 87%;
+            padding: 0 1.2rem;
+            ul{
+                li{    
+                    a{
+                        font-size: 11px;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .right-container{
+            width: 13%;
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (width > 0px) and (width <= 800px) {
+    .navbar-main-container{
+        // height: 50px;
+        display: none;
+        .left-container{
+            // width: 87%;
+            // padding: 0 1.2rem;
+            ul{
+                li{    
+                    a{
+                        // font-size: 11px;
+                        // font-weight: 700;
+                    }
+                }
+            }
+        }
+        .right-container{
+            // width: 13%;
+            p{
+                // font-size: 12px;
+            }
+        }
+    }
+}

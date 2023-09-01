@@ -1,0 +1,100 @@
+.choose-container{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 7rem;
+    align-items: center;
+    background-color: #1d1d1d;
+    color: white;
+    h1{
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        li{
+            font-size: 15px;
+            color: rgb(132, 132, 132);
+        }
+    }
+    .img-container{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        .image{
+            width: 23rem;
+            height: 16rem;
+            object-fit: cover;
+        }
+    }
+    button{
+        background-color: #fc3346;
+        color: white;
+        border: none;
+        font-size: 20px;
+        padding: 14px 40px ;
+        margin-top: 60px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+}
+
+@media (width > 600px) and (width <= 1024px){
+    .choose-container{
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        ul{
+            li{
+                font-size: 14px;
+            }
+        }
+        .img-container{
+            width: 100%;
+            .image{
+                width: 21rem;
+                height: 14rem;
+            }
+        }
+        button{
+            font-size: 17px;
+            padding: 10px 30px ;
+            margin-top: 50px;
+            border-radius: 7px;
+        }
+    }
+}
+@media (width > 300px) and (width <= 600px){
+    .choose-container{
+        padding: 2rem 2rem;
+        h1{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        ul{
+            li{
+                font-size: 10px;
+            }
+        }
+        .img-container{
+            width: 100%;
+            .image{
+                width: 17rem;
+                height: 12rem;
+            }
+        }
+        button{
+            font-size: 14px;
+            padding: 7px 15px ;
+            margin-top: 50px;
+            border-radius: 3px;
+        }
+    }
+}
