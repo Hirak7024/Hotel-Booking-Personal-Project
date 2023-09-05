@@ -4,15 +4,14 @@ import { BiWifi, BiSolidCoffeeAlt } from "react-icons/bi";
 import { FaBath, FaParking, FaSwimmingPool, FaHotdog, FaDumbbell, FaCocktail } from "react-icons/fa";
 import Reservation from '../../components/Reservation/Reservation';
 import { useLocation } from 'react-router-dom';
-import useFetch from '../../hooks/useFetch';
+import { useSelector } from "react-redux";
 import "./hotelroom.scss";
 
 export default function HotelRoom() {
     const location = useLocation();
     const id = location.pathname.split("/")[2];  //to get the id of the room . [2] is given at last because when we split the pathname by "/", we get three items and id is at index 2
 
-    const { data, loading, error } = useFetch(`/api/rooms/${id}`);
-    console.log(data);
+    const data = useSelector((state)=>state.room.rooms.data.find(room=>room._id === id));
 
     useEffect(() => {
         window.scrollTo(0, 0);

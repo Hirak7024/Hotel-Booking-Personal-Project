@@ -1,17 +1,15 @@
 import React, { useEffect } from 'react';
 import HomeImage from "../../assets/HomeImage.jpg";
-import room1 from "../../assets/Room1.jpg";
-import room2 from "../../assets/Room2.jpg";
-import room3 from "../../assets/Room3.jpg";
 import Room from '../../components/Room/Room';
 import { useLocation } from 'react-router-dom';
-import useFetch from '../../hooks/useFetch';
+import {useSelector} from "react-redux";
 import "./hotels.scss";
 
 export default function Hotels() {
-    const { data, loading, error } = useFetch("/api/rooms");
-
     const location = useLocation();
+
+    const loading = useSelector((state)=>state.room.loading);
+    const data = useSelector((state)=>state.room.rooms.data);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -27,17 +25,19 @@ export default function Hotels() {
                         "Loading"
                     ) : (
                         <>
-                            {data.length > 0 && (data.map((item) => (
+                            {data && (data.map((item) => (
+                                <div key={item._id}>
                                 <Room
-                                    roomTitle={item.title}
-                                    roomSize={item.roomSize}
-                                    maxPeople={item.maxPeople}
-                                    roomDesc={item.desc}
-                                    roomPrice={item.price}
-                                    roomImg={item.photo}
-                                    roomId={item._id}
+                                roomTitle={item.title}
+                                roomSize={item.roomSize}
+                                maxPeople={item.maxPeople}
+                                roomDesc={item.desc}
+                                roomPrice={item.price}
+                                roomImg={item.photo}
+                                roomId={item._id}
                                 />
-                            )))}
+                                </div>
+                                )))}
                         </>
                     )}
                 </div>
