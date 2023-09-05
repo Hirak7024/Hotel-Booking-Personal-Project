@@ -3,7 +3,7 @@ import axios from "axios";
 
 //This is a action. CreateAsyncThunk creates an action
 export const getAllData = createAsyncThunk("getRooms", async()=>{
-    const response = await axios.get("http://localhost:8000/api/rooms");
+    const response = await axios.get("https://hotel-booking-personal-project-backend.onrender.com/api/rooms");
     return response; 
 })
 
