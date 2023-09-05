@@ -77,6 +77,7 @@
 
 @media (width > 800px) and (width <= 1024px) {
     .navbar-main-container{
+        display: none;
         height: 50px;
         .left-container{
             width: 87%;
