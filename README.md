@@ -15,6 +15,9 @@ This project is a hotel booking website built using the MERN stack. As my first 
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 
+## Deployment
+The project is deployed and can be accessed [here](https://hotel-booking-personal-project-1.vercel.app/).
+
 ## Screenshots
 ### Homepage
 ![Screenshot (239)](https://github.com/Hirak7024/Hotel-Booking-Personal-Project/assets/118119209/4e9ca4eb-4051-4491-859d-38d6e48effb5)
@@ -29,8 +32,6 @@ This project is a hotel booking website built using the MERN stack. As my first 
 ![Screenshot (244)](https://github.com/Hirak7024/Hotel-Booking-Personal-Project/assets/118119209/f4069a44-02ad-4221-b35b-a1dd2d496b6b)
 ![Screenshot (245)](https://github.com/Hirak7024/Hotel-Booking-Personal-Project/assets/118119209/26b0af3c-359a-4b9e-a583-ce61d0b171db)
 
-## Deployment
-The project is deployed and can be accessed [here](https://hotel-booking-personal-project-1.vercel.app/).
 
 ## Installation
 To run this project locally, follow these steps:
